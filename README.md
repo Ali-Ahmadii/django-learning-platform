@@ -7,3 +7,8 @@ Also If You Want Install Whole Packages Together With requirements.txt File You 
 -     pip install -r requirements.txt
 You Can Make Sure About Installed Python Packages By This Command
 -     pip freeze
+Then We Will Sync Our Database Using These Commnads(we use default sqllite engine here for simplicity)
+-       python manage.py makemigrations
+-       python manage.py migrate
+Running On localhost
+-       python manage.py runserver
