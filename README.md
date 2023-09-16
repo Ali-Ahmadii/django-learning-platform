@@ -12,3 +12,10 @@ Then We Will Sync Our Database Using These Commnads(we use default sqllite engin
 -       python manage.py migrate
 Running On localhost
 -       python manage.py runserver
+Running Memchached On Docker
+-       docker pull memcached
+Run The Memcached Docker Container On 11211 Port
+-       docker run -it --rm --name memcached -p 11211:11211 memcached -m 64
+Initialize The Redis Docker Container On 6379 Port
+-       docker pull redis
+-       docker run -it --rm --name redis -p 6379:6379 redis
